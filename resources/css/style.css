@@ -1,24 +1,76 @@
 body {
     font-size: 16px;
     font-family: Montserrat, sans-serif;
+    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 nav {
-    background-color: #000000;
+    background-color: #6B7C93;
     opacity: 0.8;
+    display: none;
 }
 
 .navigation_text {
     font-size: 1.3rem;
-    color: #d3d3db;
-    font-weight: 800;
+    color: #F6F9FC;
+    font-weight: 600;
 }
 
 .navigation_text:hover {
-    
+    color: #B0C1D3;
 }
 
 .social_logo {
-    color: #d3d3db;
+    color: #F6F9FC;
     font-size: 2rem;
+}
+
+.social_logo:hover {
+    color: #B0C1D3;
+}
+
+.jumbotron {
+    background-image: url(../images/patrick-fore-362583-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+}
+
+.display-4 {
+    width: 480px;
+    color: #F6F9FC;
+    padding-top: 5rem;
+    font-size: 4rem;
+    line-height: 1.9;   
+}
+
+.first-header {
+    font-weight: 600;
+    color: rgb(187, 115, 48);
+}
+
+.second-header {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.beer {
+    background-color: rgb(166, 216, 193);
+    margin-right: 1rem;
+    margin-left: 1rem;
+    height: auto;
 }
