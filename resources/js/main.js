@@ -9,7 +9,7 @@
 });
 */
 
-function changeContent(description) {
+/* function changeContent(description) {
     console.log(description);
     const myDesc = document.querySelector(description).innerHTML;
     document.querySelector('#beer-header4').innerHTML = myDesc;
@@ -21,3 +21,4 @@ function changeContentBack(header) {
     const myHead = document.querySelector(header).innerHTML;
     document.querySelector('#beer-description4').innerHTML = myHead;
 }
+ */
