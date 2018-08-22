@@ -18,28 +18,39 @@ p {
 }
 
 nav {
-    background-color: #6B7C93;
-    opacity: 0.8;
+    background-color: rgba(107, 124, 147, 0.8);
+}
+
+.hide-on-scroll {
     display: none;
 }
 
-.navigation_text {
+.nav-item {
     font-size: 1.3rem;
-    color: #F6F9FC;
+    color: rgb(0, 6, 12, 1);
     font-weight: 600;
 }
 
-.navigation_text:hover {
-    color: #B0C1D3;
+#nav-link-color {
+    color: rgba(0, 0, 0, 1);
+}
+
+#nav-link-color:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 575px) {
+  nav.navbar {
+    background-color: rgba(107, 124, 147, 1);
+    }
 }
 
 .social_logo {
-    color: #F6F9FC;
     font-size: 2rem;
 }
 
-.social_logo:hover {
-    color: #B0C1D3;
+#collapsibleNavbar {
+    text-align: center;
 }
 
 .jumbotron {
@@ -73,5 +84,6 @@ nav {
     background-color: rgb(166, 216, 193);
     margin-right: 1rem;
     margin-left: 1rem;
+    margin-bottom: 3rem;
     height: auto;
 }

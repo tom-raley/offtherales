@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous">
-        
+        <script src="resources/js/main.js"></script>
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     </head>
     <body>
@@ -35,26 +35,43 @@
         </head>
         
         <body>
-            <nav class="navbar navbar-default navbar-expand-lg fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-nav" href="#">
-                        <img src="resources/images/OffTheRales.png" alt="Off the Rales logo" width="112" height="60"></a>
-                    <div class="navbar-nav mx-auto">
-                        <a class="nav-link nav-item navigation_text" href="#our-story">Our Story</a>
-                        <a class="nav-link nav-item navigation_text" href="#our-beers">Our Beers</a>
-                        <a class="nav-link nav-item navigation_text" href="#">Find Our Beer</a>
-                        <a class="nav-link nav-item navigation_text" href="#">Contact Us</a>
-                    </div>
-                    <div class="navbar-nav">
-                        <a class="nav-link nav-item social_logo fab fa-facebook-square" href="#">
-                        </a>
-                        <a class="nav-link nav-item social_logo fab fa-twitter-square" href="#">
-                        </a>
-                        <a class="nav-link nav-item social_logo fab fa-instagram" href="#">
-                        </a>
-                        <a class="nav-link nav-item social_logo fab fa-untappd" href="#">
-                        </a>
-                    </div>
+            <nav class="navbar navbar-expand-sm fixed-top navbar-light" id="custom-nav">
+                <a class="navbar-brand" href="#">
+                    <img src="resources/images/OffTheRales.png" alt="Off the Rales logo" width="112" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"  aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link navigation_text" id="nav-link-color" href="#our-story">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation_text" id="nav-link-color" href="#our-beers">Our Beers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation_text" id="nav-link-color" href="#">Find Our Beer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation_text" id="nav-link-color" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link social_logo fab fa-facebook-square" id="nav-link-color" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social_logo fab fa-twitter-square" id="nav-link-color" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social_logo fab fa-instagram" id="nav-link-color" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social_logo fab fa-untappd" id="nav-link-color" href="#"></a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
 
@@ -78,7 +95,7 @@
             <!--Our Beers-->
             <div class="container" id="our-beers">
                 <div class="row">
-                    <div class="col-sm beer">
+                    <div class="col-sm-4 beer">
                         <h5>Send Us Bock to Helles</h5>
                         <h6>7%  35 IBU  7 SRM</h6>
                         <p>A malty lager with a dominating pilsner malt flavor.  A slightly maltier, slightly more bitter, slightly boozier version of our Send Us Back To Helles.</p>
@@ -89,9 +106,26 @@
                         <p>Another malty lager, but with hints of roast malt and a bit darker flavor than our Helles.  Pairs perfectly with tacos and burritos and is positively refreshing on a hot summer day.</p>
                     </div>
                     <div class="col-sm beer">
-                        <h5>Belgian IPA</h5>
+                        <h5>Send Us Back to Helles</h5>
+                        <h6>5% 28 IBU 4 SRM</h6>
+                        <p>Our classic, light lager.  Pilsner malt marries beautifully with the earthy, floral German hops to balance a perfect lager.</p>
+                    </div>
+                    <div class="col-sm beer" onmouseover="changeContent('#beer-description4')" onmouseout="changeContentBack('#beer-header4')">
+                        <div id="beer-header4">
+                            <h5>Blood Orange Helles</h5>
+                            <h6>5% 28 IBU 4 SRM</h6>
+                        </div>
+                            <p id="beer-description4">Our classic Helles with Blood Orange added to produce a citrusy, malty wonder.  Perfect on a hot summer day.</p>                       
+                    </div>
+                    <div class="col-sm beer">
+                        <h5>Async Await Belgian IPA</h5>
                         <h6>7% 65 IBU 9 SRM</h6>
-                        <p>The best of both worlds--we all love Belgians; we all love IPAs.  Why not combine them and make a beautiful step child?</p>
+                        <p>The best of both worlds--we all love Belgians; we all love IPAs. Why not combine them and make a beautiful step child?</p>
+                    </div>
+                    <div class="col-sm beer">
+                        <h5>German Pils</h5>
+                        <h6>5% 45 IBU 3 SRM</h6>
+                        <p>Our German Pils is one of our more bitter beers, despite its light color and flavor.  The lager yeast lets the noble hops shine through, while the Pilsner malt makes an excellent backbone.</p>
                     </div>
                 </div>
             </div>
@@ -108,23 +142,8 @@
                 crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                 crossorigin="anonymous"></script>
+            
+
         </body>
         
         </html>
-
-
-
-
-
-
-
-
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-    </body>
-</html>
