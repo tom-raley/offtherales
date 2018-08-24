@@ -65,6 +65,11 @@ nav {
     margin-bottom: 3rem;
 }
 
+/*Our Story Styles*/
+#our-story {
+    padding-top: 6.25rem;
+}
+
 /*Our Beers Styles*/
 .beer {
     background-color: rgb(166, 216, 193);
@@ -79,6 +84,7 @@ nav {
     text-align: center;
     margin-bottom: 2rem;
     font-weight: 600;
+    padding-top: 6.25rem;
 }
 
 h5 {
@@ -91,6 +97,30 @@ h6 {
 
 p {
     font-size: 1rem;
+}
+
+/*Beer Finder Styles*/
+#beerfinder {
+    margin-top: 2rem;
+    padding-top: 6.25rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*Footer Styles*/
+footer {
+    height: 4rem;
+    background-color: rgba(107, 124, 147, 0.8);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-top: 6.25rem;
 }
 
 /*Mobile Styles*/
